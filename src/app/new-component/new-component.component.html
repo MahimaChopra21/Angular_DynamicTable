@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <th *ngFor="let heading of headings" (click)="sort(heading)" >
+      {{heading}}
+    </th>
+  </thead>
+
+  <tbody>
+    <tr *ngFor = "let arr of employees">
+      <td>{{arr.firstname}}</td>
+      <td>{{arr.lastname}}</td>
+      <td>{{arr.id}}</td>
+      <td>{{arr.phoneno}}</td>
+      <td>{{arr.email}}</td>
+      <td>{{arr.designation}}</td>
+    </tr>
+  </tbody>
+</table>
